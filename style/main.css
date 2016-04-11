@@ -1,0 +1,134 @@
+/*NOTE : bourbon should take care of all this mess, no time to implement it*/
+
+
+body {
+    font-family:'Raleway', 'Arial','sans-serif';
+    font-size:16px;
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+    width: 920px;
+    margin: 0 auto;
+    display:inline-block;
+    /*this is reseting the text-aling center*/
+    text-align: left;
+}
+
+.container input[type='search'] {
+    width: 100%;
+    padding:10px;
+    line-height: 1.8;
+    font-size: 32px;
+    background: #F1F1F1;
+    color:#333;
+    margin-top:10px;
+    border:0px;
+}
+
+.cards {
+    margin-top: 10px;
+}
+
+.cards div {
+    position: relative;
+    display: flex; /* or inline-flex */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.cards div .card {
+    width: 250px;
+    height: 230px;
+    border: 1px solid #E1E1E1;
+    overflow: hidden;
+    flex-grow:1;
+    position: relative;
+    background: #E1E1E1;
+}
+
+.cards div .card div {
+    width: 100%;
+}
+
+.cards div .card div img {
+    position: absolute;
+    width: 110%;
+}
+.cards div .card div span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family:'Aldrich','arial','sans-serif';
+    font-size: 20px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    line-height: 11.4;
+    color: #FFF;
+    text-shadow: 5px 5px 10px rgba(150, 150, 150, 1);
+}
+
+.cards div button {
+    position: absolute;
+    right:0;
+    bottom:0;
+    width:50px;
+    height:50px;
+    border:0;
+    background: #111;
+    background: rgba(0,0,0,.7);
+    font-size: 15px;
+    color: #FFF;
+    -webkit-box-shadow: 21px 29px 57px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 21px 29px 57px -12px rgba(0,0,0,0.75);
+    box-shadow: 21px 29px 57px -12px rgba(0,0,0,0.75);
+    transition: all .5s ease;
+}
+
+.cards div button:hover {
+    transition: all .5s ease;
+    background: red;
+    background: rgba(255,0,0,.7);
+}
+
+.tabs a {
+    display: inline-block;
+    width: 50%;
+    border: 1px solid #E1E1E1;
+    -webkit-border-radius:5px 0 0 5px;
+    -moz-border-radius:5px 0 0 5px;
+    border-radius:5px 0 0 5px;
+    text-align: center;
+    text-decoration: none;
+    background: #FDFDFD;
+    color:#BBB;
+    padding: 3px 0 3px 0;
+    font-size: 14px;
+}
+
+.tabs a+a {
+    -webkit-border-radius:0 5px 5px 0;
+    -moz-border-radius:0 5px 5px 0;
+    border-radius:0 5px 5px 0;
+    border-left:0;
+}
+
+.noResults {
+    font-family:'Aldrich','arial','sans-serif';
+    font-size: 35px;
+    text-align: center;
+    padding: 25px;
+}
+
+.searchHelp {
+    margin-top: 10px;
+    display: inline-block;
+    width: 100%;
+    font-family:'Aldrich','arial','sans-serif';
+    text-align: left;
+    padding:5px;
+}
