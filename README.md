@@ -11,7 +11,9 @@ Concept in this small app :
 - [x] class components
 - [x] functions components
 - [x] use of states and Redux state
-- [x] axios for AJAX
+- [x] basic middleware
+- [x] react-promise (middleware package)
+- [x] Marvel API using axios package  
 
 # install
 
