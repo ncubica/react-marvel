@@ -24,3 +24,5 @@ npm start
 
 that's it
 ```
+
+`Webpack boilerplate from this great course https://www.udemy.com/react-redux/learn/v4/`
