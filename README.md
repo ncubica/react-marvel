@@ -13,7 +13,7 @@ Concept in this small app :
 - [x] use of states and Redux state
 - [x] basic middleware
 - [x] react-promise (middleware package)
-- [x] Marvel API using axios package  
+- [x] Marvel API using axios package
 
 # install
 
