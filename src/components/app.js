@@ -17,6 +17,7 @@ class App extends Component {
           <Alert
             message={alertData.message}
             thumbnail={alertData.thumbnail}
+            thumbnailMessage={alertData.thumbnailMessage}
             onDismiss={dismissAlert}
           />
         )}

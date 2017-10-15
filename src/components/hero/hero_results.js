@@ -16,7 +16,8 @@ class HeroDetail extends Component {
       this.props.add_player(hero);
       this.props.show_alert(
         `${hero.name} ADDED`,
-        `${hero.thumbnail.path}.${hero.thumbnail.extension}`
+        `${hero.thumbnail.path}.${hero.thumbnail.extension}`,
+        hero.name
       );
     }
   }

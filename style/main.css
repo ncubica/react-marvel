@@ -58,7 +58,7 @@ body {
     position: absolute;
     width: 110%;
 }
-.cards div .card div span {
+span.card-text {
     position: absolute;
     top: 0;
     left: 0;
@@ -131,4 +131,12 @@ body {
     font-family:'Aldrich','arial','sans-serif';
     text-align: left;
     padding:5px;
+}
+
+.Alert {
+    width: 25%;
+}
+
+.Alert__img-container {
+    position: relative;
 }

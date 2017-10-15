@@ -3,7 +3,7 @@ export default (props)=> {
   return (
     <div>
         <img src={props.image} />
-        <span>{props.name}</span>
+        <span className="card-text">{props.name}</span>
     </div>
   );
 };
