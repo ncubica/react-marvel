@@ -2,7 +2,7 @@ import React from 'react';
 
 const PlayerItem = (props)=> {
     return (
-        <span>name: {props.name}</span>
+        <span>{props.name}</span>
     )
 };
 

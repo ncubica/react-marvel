@@ -15,7 +15,7 @@ export default function Alert({
                 <img src={thumbnail} alt="Thumbnail" />
             </div>
             <h3>{message}</h3>
-            <button onClick={onDismiss}>
+            <button onClick={onDismiss} className="redRemove">
                 <i className="fa fa-times" aria-hidden="true" />
             </button>
         </div>

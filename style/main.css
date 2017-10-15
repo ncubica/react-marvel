@@ -180,8 +180,8 @@ span.cardText {
     color: white;
 }
 
-.Alert button {
-    background-color: red;
+button.redRemove {
+    background-color: #be0202;
     color: white;
     align-self: flex-start;
     border: none;
@@ -191,4 +191,17 @@ span.cardText {
 
 .Alert button:hover {
     opacity: .75;
+}
+
+.Players .Players__playerContainer {
+    width: 100%;
+    font-family:'Aldrich','arial','sans-serif';
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #6e6b6b;
+    margin: 10px 0;
+    padding: 20px 0;
+    border-bottom: 1px solid #e6e6e6;
 }
