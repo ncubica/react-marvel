@@ -179,3 +179,16 @@ span.card-text {
     text-transform: uppercase;
     color: white;
 }
+
+.Alert button {
+    background-color: red;
+    color: white;
+    align-self: flex-start;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.Alert button:hover {
+    opacity: .75;
+}
