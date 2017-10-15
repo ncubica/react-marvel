@@ -6,6 +6,7 @@ import _ from 'lodash';
 import PlayerItem from './players_item';
 import player_remove_action from '../../actions/players/player_remove_actions';
 import player_save_action from '../../actions/players/players_save_action';
+import '../styles/players.css'
 
 class Players extends Component {
     handleRemovePlayer(player) {

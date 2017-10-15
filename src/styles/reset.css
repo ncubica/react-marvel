@@ -1,11 +1,11 @@
 /*
-	HTML5 Reset :: style.css
-	----------------------------------------------------------
-	We have learned much from/been inspired by/taken code where offered from:
+  HTML5 Reset :: style.css
+  ----------------------------------------------------------
+  We have learned much from/been inspired by/taken code where offered from:
 
-	Eric Meyer					:: http://meyerweb.com
-	HTML5 Doctor				:: http://html5doctor.com
-	and the HTML5 Boilerplate	:: http://html5boilerplate.com
+  Eric Meyer          :: http://meyerweb.com
+  HTML5 Doctor        :: http://html5doctor.com
+  and the HTML5 Boilerplate :: http://html5boilerplate.com
 
 -------------------------------------------------------------------------------*/
 
@@ -46,11 +46,11 @@ embed {max-width: 100%;}
 
 /*
    Note: keeping IMG here will cause problems if you're using foreground images as sprites.
-	In fact, it *will* cause problems with Google Maps' controls at small size.
-	If this is the case for you, try uncommenting the following:
+  In fact, it *will* cause problems with Google Maps' controls at small size.
+  If this is the case for you, try uncommenting the following:
 
 #map img {
-		max-width: none;
+    max-width: none;
 }
 */
 
@@ -58,8 +58,8 @@ embed {max-width: 100%;}
 html {overflow-y: scroll;}
 
 /* we use a lot of ULs that aren't bulleted.
-	you'll have to restore the bullets within content,
-	which is fine because they're probably customized anyway */
+  you'll have to restore the bullets within content,
+  which is fine because they're probably customized anyway */
 ul {list-style: none;}
 
 blockquote, q {quotes: none;}

@@ -145,41 +145,6 @@ span.cardText {
     height: 100%;
 }
 
-.Alert {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background: rgba(0,0,0,.7);
-}
-
-.Alert__imgContainer {
-    position: relative;
-    height: 100%;
-}
-
-.Alert__imgContainer img {
-    height: 100%;
-}
-
-
-.Alert .cardText {
-    font-size: 12px;
-    line-height: normal;
-    position: static;
-}
-
-.Alert h3 {
-    font-family:'Aldrich','arial','sans-serif';
-    font-size: 24px;
-    margin: 0 20px;
-    text-transform: uppercase;
-    color: white;
-}
-
 button.redRemove {
     background-color: #be0202;
     color: white;
@@ -203,23 +168,3 @@ button.black:hover {
     background-color: black;
 }
 
-.Alert button:hover {
-    opacity: .75;
-}
-
-.Players .Players__playerContainer {
-    width: 100%;
-    font-family:'Aldrich','arial','sans-serif';
-    font-size: 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #6e6b6b;
-    margin: 10px 0;
-    padding: 20px 0;
-    border-bottom: 1px solid #e6e6e6;
-}
-
-.Players button {
-    float: right;
-}

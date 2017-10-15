@@ -7,6 +7,8 @@ import { Router, browserHistory } from 'react-router';
 import reducers from './reducers';
 
 import routes from './routes';
+import './styles/main.css'
+import './styles/reset.css'
 
 import promise from 'redux-promise';
 

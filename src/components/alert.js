@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles/alert.css'
 
 // Made this as generic as possible to open the door to reusing it for different messages down the line.
 // Could have used the HeroItem component to display the thumbnail, but would've restricted this component's flexibility.
