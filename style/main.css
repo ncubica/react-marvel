@@ -58,7 +58,7 @@ body {
     position: absolute;
     width: 110%;
 }
-span.card-text {
+span.cardText {
     position: absolute;
     top: 0;
     left: 0;
@@ -133,7 +133,7 @@ span.card-text {
     padding:5px;
 }
 
-.centered-text-container {
+.centeredTextContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -156,17 +156,17 @@ span.card-text {
     background: rgba(0,0,0,.7);
 }
 
-.Alert__img-container {
+.Alert__imgContainer {
     position: relative;
     height: 100%;
 }
 
-.Alert__img-container img {
+.Alert__imgContainer img {
     height: 100%;
 }
 
 
-.Alert .card-text {
+.Alert .cardText {
     font-size: 12px;
     line-height: normal;
     position: static;

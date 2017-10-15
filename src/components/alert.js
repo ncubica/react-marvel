@@ -8,9 +8,9 @@ export default function Alert({
 }) {
   return (
     <div className="Alert">
-      <div className="Alert__img-container">
-        <div className="centered-text-container">
-          <span className="card-text">{thumbnailMessage}</span>
+      <div className="Alert__imgContainer">
+        <div className="centeredTextContainer">
+          <span className="cardText">{thumbnailMessage}</span>
         </div>
         <img src={thumbnail} alt="Thumbnail" />
       </div>
