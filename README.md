@@ -32,7 +32,6 @@ that's it
 
 ### Improvements to Be Made
 - Could use Immutable.js to use immutable data structures to ensure no direct state mutation
-- Move CSS inside JS, either importing separate CSS files for each component or a CSS-in-JS solution
 - Hot reloading would be nice ;)
 - Some way to control quantity of each hero
 - Make it responsive

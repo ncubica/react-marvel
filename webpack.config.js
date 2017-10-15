@@ -12,6 +12,7 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel'
       },
+      // For production build we'll want to generate a CSS file for caching
       {
         test: /\.css$/,
         loaders: ['style-loader','css-loader']
