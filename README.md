@@ -37,7 +37,6 @@ that's it
 - Make it responsive
 - Code splitting for better performance as the app grows
 - Need to define container components that will receive state, perhaps naming them as BlankContainer to better differentiate them down the line. The rest can be functional components that receive relevant props from containers (this structure does currently exist, just need better labelling to avoid confusion down the line)
-- a focus on more generic components. E.g. HeroItem does not necessarily have anything to do with the Hero, so could be renamed ImageCard or something along those lines to encourage reuse.
 - Some fancy animations, of course
 - PropTypes for each component to document them better
 - Tests tests tests!
