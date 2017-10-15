@@ -1,7 +1,11 @@
 import {ACTION_SHOW_ALERT} from '../actions/alert/show_alert_action';
 import {ACTION_HIDE_ALERT} from '../actions/alert/hide_alert_action';
 
-export default function(state = null, action) {
+const initialState = {
+  alertData: null
+}
+
+export default function(state = initialState, action) {
   switch (action.type) {
     case ACTION_SHOW_ALERT:
       if (action.payload) {

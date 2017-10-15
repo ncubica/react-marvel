@@ -1,21 +1,23 @@
 import React from 'react';
 import { Component } from 'react';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import hide_alert_action from '../actions/alert/hide_alert_action';
 import Tabs from './tabs';
 import Alert from './alert';
 
 class App extends Component {
   render() {
-    console.log(this.props);
-    const { alert } = this.props;
+    const { alertData, dismissAlert } = this.props;
     return (
       <div>
         <Tabs />
         <div>{this.props.children}</div>
-        {alert && (
+        {alertData && (
           <Alert
-            message={alert.alertData.message}
-            thumbnail={alert.alertData.thumbnail}
+            message={alertData.message}
+            thumbnail={alertData.thumbnail}
+            onDismiss={dismissAlert}
           />
         )}
       </div>
@@ -25,8 +27,12 @@ class App extends Component {
 
 function mapStateToProps(state) {
   return {
-    alert: state.alert
+    alertData: state.alert.alertData
   };
 }
 
-export default connect(mapStateToProps)(App);
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ dismissAlert: hide_alert_action }, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
