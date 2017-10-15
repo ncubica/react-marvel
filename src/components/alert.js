@@ -9,7 +9,9 @@ export default function Alert({
   return (
     <div className="Alert">
       <div className="Alert__img-container">
-        <span className="card-text">{thumbnailMessage}</span>
+        <div className="centered-text-container">
+          <span className="card-text">{thumbnailMessage}</span>
+        </div>
         <img src={thumbnail} alt="Thumbnail" />
       </div>
       <h3>{message}</h3>
