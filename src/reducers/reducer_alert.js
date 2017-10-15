@@ -6,13 +6,13 @@ export default function(state = null, action) {
     case ACTION_SHOW_ALERT:
       if (action.payload) {
         return Object.assign({}, state, {
-          alertMessage: action.payload
+          alertData: action.payload
         });
       }
       return state;
     case ACTION_HIDE_ALERT:
       return Object.assign({}, state, {
-        alertMessage: null
+        alertData: null
       });
     default:
       return state;

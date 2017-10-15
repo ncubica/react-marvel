@@ -14,7 +14,7 @@ class HeroDetail extends Component {
   onClickHandler(hero) {
     if (hero) {
       this.props.add_player(hero);
-      this.props.show_alert('Hello')
+      this.props.show_alert(`${hero.name} ADDED`, hero.thumbnail);
       alert(
         "We added a super hero, go and see the 'my heroes' tab. \n\n - sorry for this horrible alert, need more UX/UI :P -"
       );
@@ -47,7 +47,7 @@ class HeroDetail extends Component {
 
 function mapStateToProps(state) {
   return {
-    currentHero: state.currentHero,
+    currentHero: state.currentHero
   };
 }
 
