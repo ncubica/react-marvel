@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import React, { Component } from 'react';
 import hero_search_action from '../../actions/heroes/hero_search_action';
+import start_loading_action from '../../actions/loading/start_loading_action';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
@@ -23,6 +24,7 @@ class HeroSearch extends Component {
 
     search() {
         if (this.state.search) {
+            this.props.start_loading()
             this.props.fetch_hero(this.state.search);
         }
     }
@@ -55,7 +57,7 @@ class HeroSearch extends Component {
 }
 
 function mapDispatchToProps(dispatch) {
-    return bindActionCreators({ fetch_hero: hero_search_action }, dispatch);
+    return bindActionCreators({ fetch_hero: hero_search_action, start_loading: start_loading_action }, dispatch);
 }
 
 export default connect(null, mapDispatchToProps)(HeroSearch);

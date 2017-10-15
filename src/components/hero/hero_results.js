@@ -46,13 +46,17 @@ class HeroDetail extends Component {
     }
 
     render() {
+        if (this.props.loading) {
+            return <div>Loading...</div>
+        }
         return <div>{this.renderResults()}</div>;
     }
 }
 
-function mapStateToProps(state) {
+function mapStateToProps({ currentHero, loading }) {
     return {
-        currentHero: state.currentHero
+        currentHero,
+        loading
     };
 }
 
