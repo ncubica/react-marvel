@@ -5,7 +5,7 @@ import player_add_action from '../../actions/players/player_add_action';
 import show_alert_action from '../../actions/alert/show_alert_action';
 import hide_alert_action from '../../actions/alert/hide_alert_action';
 
-import HeroItem from './hero_results_item';
+import ImageCard from '../image_card';
 
 class HeroDetail extends Component {
     handleAddHero(hero) {
@@ -31,8 +31,8 @@ class HeroDetail extends Component {
             return heroes.map(hero => {
                 return (
                     <div className="card" key={hero.id}>
-                        <HeroItem
-                            name={hero.name}
+                        <ImageCard
+                            text={hero.name}
                             image={`${hero.thumbnail.path}.${hero.thumbnail
                                 .extension}`}
                         />

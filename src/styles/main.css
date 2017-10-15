@@ -83,6 +83,7 @@ span.cardText {
     background: rgba(0,0,0,.7);
     font-size: 15px;
     color: #FFF;
+    z-index: 3;
     -webkit-box-shadow: 21px 29px 57px -12px rgba(0,0,0,0.75);
     -moz-box-shadow: 21px 29px 57px -12px rgba(0,0,0,0.75);
     box-shadow: 21px 29px 57px -12px rgba(0,0,0,0.75);
