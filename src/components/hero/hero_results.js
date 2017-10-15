@@ -13,6 +13,9 @@ class HeroDetail extends Component {
     }
 
     onClickHandler(hero) {
+        if (this.timeout) {
+            clearTimeout(this.timeout)
+        }
         if (hero) {
             this.props.add_player(hero);
             this.props.show_alert(
@@ -20,7 +23,7 @@ class HeroDetail extends Component {
                 `${hero.thumbnail.path}.${hero.thumbnail.extension}`,
                 hero.name
             );
-            setTimeout(() => {
+            this.timeout = setTimeout(() => {
                 this.props.hide_alert();
             }, 1500);
         }
