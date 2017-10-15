@@ -31,7 +31,12 @@ class Players extends Component {
     }
 
     render() {
-        return <div className="Players">{this.renderPlayers()}</div>;
+        return (
+            <div className="Players">
+                {this.renderPlayers()}
+                <button className="black">Save</button>
+            </div>
+        );
     }
 }
 

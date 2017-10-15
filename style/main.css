@@ -189,6 +189,20 @@ button.redRemove {
     font-size: 24px;
 }
 
+button.black {
+    background: rgba(0,0,0,.7);
+    color: white;
+    font-family:'Aldrich','arial','sans-serif';
+    padding: 10px 25px;
+    padding-top: 12px;
+    border: none;
+    font-size: 24px;
+}
+
+button.black:hover {
+    background-color: black;
+}
+
 .Alert button:hover {
     opacity: .75;
 }
@@ -204,4 +218,8 @@ button.redRemove {
     margin: 10px 0;
     padding: 20px 0;
     border-bottom: 1px solid #e6e6e6;
+}
+
+.Players button {
+    float: right;
 }
