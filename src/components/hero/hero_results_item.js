@@ -1,9 +1,10 @@
 import React from 'react';
-export default props => {
+
+export default ({ image, name }) => {
     return (
         <div>
-            <img src={props.image} />
-            <span className="cardText">{props.name}</span>
+            <img src={image} />
+            <span className="cardText">{name}</span>
         </div>
     );
 };

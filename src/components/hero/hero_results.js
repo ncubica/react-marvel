@@ -8,13 +8,9 @@ import hide_alert_action from '../../actions/alert/hide_alert_action';
 import HeroItem from './hero_results_item';
 
 class HeroDetail extends Component {
-    constructor(props) {
-        super(props);
-    }
-
-    onClickHandler(hero) {
+    handleAddHero(hero) {
         if (this.timeout) {
-            clearTimeout(this.timeout)
+            clearTimeout(this.timeout);
         }
         if (hero) {
             this.props.add_player(hero);
@@ -40,7 +36,7 @@ class HeroDetail extends Component {
                             image={`${hero.thumbnail.path}.${hero.thumbnail
                                 .extension}`}
                         />
-                        <button onClick={this.onClickHandler.bind(this, hero)}>
+                        <button onClick={this.handleAddHero.bind(this, hero)}>
                             <i className="fa fa-plus" aria-hidden="true" />
                         </button>
                     </div>

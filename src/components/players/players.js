@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import _ from 'lodash';
+
 import PlayerItem from './players_item';
 import player_remove_action from '../../actions/players/player_remove_actions';
 import player_save_action from '../../actions/players/players_save_action';
-import { bindActionCreators } from 'redux';
-
-import _ from 'lodash';
 
 class Players extends Component {
-    onClickHandler(player) {
+    handleRemovePlayer(player) {
         this.props.remove_player(player.id);
     }
 
     handleSavePlayers = () => {
-        const players = _.map(this.props.myPlayers, player => player.name)
-        this.props.save_players(players)
-    }
+        const players = _.map(this.props.myPlayers, player => player.name);
+        this.props.save_players(players);
+    };
 
     renderPlayers() {
         if (Object.keys(this.props.myPlayers).length > 0) {
@@ -24,7 +24,7 @@ class Players extends Component {
                     <div key={player.id} className="Players__playerContainer">
                         <PlayerItem name={player.name} />
                         <button
-                            onClick={this.onClickHandler.bind(this, player)}
+                            onClick={this.handleRemovePlayer.bind(this, player)}
                             className="redRemove">
                             <i className="fa fa-times" aria-hidden="true" />
                         </button>
@@ -40,7 +40,9 @@ class Players extends Component {
         return (
             <div className="Players">
                 {this.renderPlayers()}
-                <button className="black" onClick={this.handleSavePlayers}>Save</button>
+                <button className="black" onClick={this.handleSavePlayers}>
+                    Save
+                </button>
             </div>
         );
     }
@@ -54,7 +56,10 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
     return bindActionCreators(
-        { remove_player: player_remove_action, save_players: player_save_action },
+        {
+            remove_player: player_remove_action,
+            save_players: player_save_action
+        },
         dispatch
     );
 }
