@@ -5,9 +5,7 @@ export default function(state = {}, action) {
     switch(action.type) {
         case ACTION_PLAYER_ADD:
             let hero = action.payload;
-            state[hero.id] = action.payload;
-            console.log(state);
-            return state;
+            return Object.assign({}, state, { [hero.id]: action.payload })
 
         case ACTION_PLAYER_REMOVE:
             let id = action.payload;
