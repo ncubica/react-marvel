@@ -1,5 +1,6 @@
 import {ACTION_PLAYER_ADD} from '../actions/players/player_add_action';
 import {ACTION_PLAYER_REMOVE} from '../actions/players/player_remove_actions';
+import {ACTION_SAVE_PLAYERS} from '../actions/players/players_save_action';
 
 export default function(state = {}, action) {
     switch(action.type) {
@@ -14,7 +15,11 @@ export default function(state = {}, action) {
             let id = action.payload;
             delete state[id]; //remove property from object
             return Object.assign({}, state); //new fresh copy, this will not work if we return only state;
-
+        case ACTION_SAVE_PLAYERS:
+            if(action.payload) {
+                // Do something with the response (show an error if failed, success message if succeeded)
+            }
+            return state;
         default:
             return state;
     }
