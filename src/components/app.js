@@ -8,11 +8,11 @@ import Alert from './alert';
 
 class App extends Component {
     render() {
-        const { alertData, dismissAlert } = this.props;
+        const { alertData, dismissAlert, children } = this.props;
         return (
             <div>
                 <Tabs />
-                <div>{this.props.children}</div>
+                <div>{children}</div>
                 {alertData && (
                     <Alert
                         message={alertData.message}
