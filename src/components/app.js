@@ -7,33 +7,33 @@ import Tabs from './tabs';
 import Alert from './alert';
 
 class App extends Component {
-  render() {
-    const { alertData, dismissAlert } = this.props;
-    return (
-      <div>
-        <Tabs />
-        <div>{this.props.children}</div>
-        {alertData && (
-          <Alert
-            message={alertData.message}
-            thumbnail={alertData.thumbnail}
-            thumbnailMessage={alertData.thumbnailMessage}
-            onDismiss={dismissAlert}
-          />
-        )}
-      </div>
-    );
-  }
+    render() {
+        const { alertData, dismissAlert } = this.props;
+        return (
+            <div>
+                <Tabs />
+                <div>{this.props.children}</div>
+                {alertData && (
+                    <Alert
+                        message={alertData.message}
+                        thumbnail={alertData.thumbnail}
+                        thumbnailMessage={alertData.thumbnailMessage}
+                        onDismiss={dismissAlert}
+                    />
+                )}
+            </div>
+        );
+    }
 }
 
 function mapStateToProps(state) {
-  return {
-    alertData: state.alert.alertData
-  };
+    return {
+        alertData: state.alert.alertData
+    };
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ dismissAlert: hide_alert_action }, dispatch);
+    return bindActionCreators({ dismissAlert: hide_alert_action }, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
